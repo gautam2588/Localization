@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocalizationConcept" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="localization" translatesAutoresizingMaskIntoConstraints="NO" id="2ZK-73-v5X">
+                                <rect key="frame" x="67" y="60" width="240" height="232"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="KfA-Dp-xba"/>
+                                    <constraint firstAttribute="height" constant="232" id="rbf-nw-HsA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weclome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="II0-lF-bs5">
+                                <rect key="frame" x="152" y="323" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for reading this tutorial!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLk-yV-qGs">
+                                <rect key="frame" x="20" y="364" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WZq-Rr-gJY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gLk-yV-qGs" secondAttribute="trailing" constant="20" id="65J-rb-pfz"/>
+                            <constraint firstItem="II0-lF-bs5" firstAttribute="top" secondItem="2ZK-73-v5X" secondAttribute="bottom" constant="31" id="A84-Zk-ts1"/>
+                            <constraint firstItem="gLk-yV-qGs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Eec-nQ-h6h"/>
+                            <constraint firstItem="gLk-yV-qGs" firstAttribute="top" secondItem="II0-lF-bs5" secondAttribute="bottom" constant="20" id="Iaj-fF-W87"/>
+                            <constraint firstItem="II0-lF-bs5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W1n-7p-rv7"/>
+                            <constraint firstItem="2ZK-73-v5X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="WKQ-PT-lFK"/>
+                            <constraint firstItem="II0-lF-bs5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jXo-q2-x8D"/>
+                            <constraint firstItem="2ZK-73-v5X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q8f-Eo-9US"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblThanksMsg" destination="gLk-yV-qGs" id="YCx-E8-MCE"/>
+                        <outlet property="lblWelcomeUser" destination="II0-lF-bs5" id="SMJ-hE-MSO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="localization" width="300" height="284"/>
+    </resources>
+</document>

@@ -1,0 +1,14 @@
+//
+//  ViewController.swift
+//  LocalizationConcept
+//
+//  Created by Gautam arora on 7/24/18.
+//  Copyright © 2018 Gautamarora. All rights reserved.
+//
+/*"Key" = "Value";*/
+
+"Welcome" = "Welcome";
+"ThanksMessage" = "Thank you for reading the tutorial!!";
+
+
+
